@@ -1,0 +1,10 @@
+---
+# local.yml is used for pull-based Ansible setup.
+
+- hosts: localhost
+  user: root
+  connection: local
+  tasks:
+     - name: checking host specific config
+       action: shell echo `date` "Hello host specific Ansible."  >> /var/log/ansible.log
+
