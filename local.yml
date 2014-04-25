@@ -1,0 +1,10 @@
+---
+# local.yml is used for pull-based Ansible setup.
+
+- hosts: localhost
+  user: root
+
+  tasks:
+     - name: just check if local is updated.
+       action: command echo "Hello Ansible."
+
