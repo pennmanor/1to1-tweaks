@@ -3,7 +3,7 @@
 
 - hosts: localhost
   user: root
-
+  connection: local
   tasks:
      - name: just check if local is updated.
        action: command echo "Hello Ansible."
