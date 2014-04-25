@@ -6,5 +6,5 @@
   connection: local
   tasks:
      - name: just check if local is updated.
-       action: shell echo "Hello Ansible."  > /var/log/ansible.log
+       action: shell echo `date` "Hello Ansible."  >> /var/log/ansible.log
 
